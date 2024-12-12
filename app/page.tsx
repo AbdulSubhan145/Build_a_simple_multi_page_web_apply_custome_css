@@ -2,100 +2,142 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <section className="hero-section">
+    <div className="hero-container">
+      <div className="hero-text">
+        <h1 className="hero-title">Payments tool for software companies</h1>
+        <p className="hero-description">From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.</p>
+        <a href="#" className="btn-get-started">
+          Get started
+          <svg className="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </a>
+        <a href="#" className="btn-speak-to-sales">Speak to Sales</a> 
+      </div>
+      <div className="hero-image">
+        <Image src="/main pic.webp" alt="mockup" width={200} height={200} className="image"/>
+      </div>
+    </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+
+<section className="feature-section">
+  <div className="container">
+    <h1 className="section-title">
+      Raw Denim Heirloom Man Braid
+      <br className="break" />
+      Selfies Wayfarers
+    </h1>
+    <div className="feature-container">
+      <div className="feature-box">
+        <div className="icon-container">
+          <i className="bi bi-arrow-through-heart"></i>
+        </div>
+        <div className="feature-content">
+          <h2 className="feature-title">Shooting Stars</h2>
+          <p className="feature-description">
+            Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+            taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
+            pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
+          </p>
+          <a className="learn-more-link">
+            Learn More
+            <i className="bi bi-arrow-right"></i>
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="feature-box">
+        <div className="icon-container">
+          <i className="bi bi-shop"></i>
+        </div>
+        <div className="feature-content">
+          <h2 className="feature-title">The Catalyzer</h2>
+          <p className="feature-description">
+            Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+            taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
+            pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
+          </p>
+          <a className="learn-more-link">
+            Learn More
+            <i className="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div className="feature-box">
+        <div className="icon-container">
+          <i className="bi bi-amazon"></i>
+        </div>
+        <div className="feature-content">
+          <h2 className="feature-title">Neptune</h2>
+          <p className="feature-description">
+            Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+            taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
+            pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
+          </p>
+          <a className="learn-more-link">
+            Learn More
+            <i className="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
+
+
+
+<section className="content-section">
+  <div className="container">
+    <div className="header">
+      <div className="header-left">
+        <h1 className="main-title">Pitchfork Kickstarter Taxidermy</h1>
+        <div className="underline"></div>
+      </div>
+      <p className="description">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably havent heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+    </div>
+    <div className="card-container">
+      <div className="card">
+        <div className="card-body">
+          <Image className="card-image" src="/mobile pic.jpg" alt="content"width={200} height={200} />
+          <h3 className="subtitle">SUBTITLE</h3>
+          <h2 className="card-title">Chichen Itza</h2>
+          <p className="card-description">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card-body">
+          <Image className="card-image" src="/mobile pic1.jpg" alt="content"width={200} height={200} />
+          <h3 className="subtitle">SUBTITLE</h3>
+          <h2 className="card-title">Colosseum Roma</h2>
+          <p className="card-description">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card-body">
+          <Image className="card-image" src="/mobile pic2.jpg" alt="content"width={200} height={200} />
+          <h3 className="subtitle">SUBTITLE</h3>
+          <h2 className="card-title">Great Pyramid of Giza</h2>
+          <p className="card-description">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card-body">
+          <Image className="card-image" src="/mobile pic3.jpg" alt="content" width={200} height={200} />
+          <h3 className="subtitle">SUBTITLE</h3>
+          <h2 className="card-title">San Francisco</h2>
+          <p className="card-description">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  </section>
+
+  
+
+
   );
 }
